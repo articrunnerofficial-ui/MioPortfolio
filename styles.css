@@ -1,5 +1,20 @@
 :root { --ink:#172226; --cream:#f4f0e8; --lime:#d8f65b; --orange:#ff7955; --blue:#8fbae7; --pink:#f2b8cf; --line:rgba(23,34,38,.2); }
 
+.cert-intro{margin:90px 0 0;display:grid;grid-template-columns:180px minmax(0,520px);gap:30px;border-top:1px solid rgba(244,240,232,.35);padding-top:18px}
+.cert-intro span{font:10px "DM Mono",monospace;text-transform:uppercase;color:var(--lime)}
+.cert-intro p{margin:0;font-size:clamp(18px,2vw,26px);letter-spacing:-.035em;line-height:1.15}
+.cert-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:6vw;margin-top:48px;align-items:start}
+.certification-list{border-top:1px solid rgba(244,240,232,.35)}
+.certification-list p{display:grid;grid-template-columns:22px 1fr;column-gap:10px;border-bottom:1px solid rgba(244,240,232,.35);margin:0;padding:16px 0}
+.certification-list span{grid-row:span 2;color:var(--orange);font-size:15px}
+.certification-list strong{font-size:15px;line-height:1.25}
+.certification-list small{margin-top:5px;color:rgba(244,240,232,.68);font:10px "DM Mono",monospace;line-height:1.35}
+.cert-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cert-gallery figure{margin:0}
+.cert-gallery img{display:block;width:100%;aspect-ratio:1/.86;object-fit:cover;object-position:center;border:1px solid rgba(244,240,232,.35);background:#fff}
+.cert-gallery figcaption{margin-top:10px;font:10px/1.35 "DM Mono",monospace;text-transform:uppercase;color:var(--lime)}
+@media(max-width:760px){.cert-intro{margin-top:65px;grid-template-columns:1fr}.cert-layout{grid-template-columns:1fr;margin-top:36px}.cert-gallery{gap:12px}.certification-list strong{font-size:14px}}
+
 .what-i-do{border-top:1px solid var(--line)}
 .service-list{padding:0 8vw 10vw}
 .service-card{border-top:1px solid var(--line)}
